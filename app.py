@@ -22,12 +22,6 @@ from langchain.agents.agent_toolkits import SQLDatabaseToolkit
 from langchain.sql_database import SQLDatabase
 from langchain.vectorstores import Chroma
 from langchain.agents.agent_toolkits import create_python_agent
-from langchain.tools.python.tool import PythonREPLTool
-# from langchain.python import PythonREPL
-# from langchain.agents import AgentType, initialize_agent
-# from langchain.tools import BaseTool, StructuredTool
-# from langchain import PromptTemplate, LLMChain
-# import openai
 from contextlib import redirect_stdout
 
 ### CSS
