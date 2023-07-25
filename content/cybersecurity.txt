@@ -1,0 +1,13 @@
+"Insider Threats" are individuals who use their access to sensitive data to illegally steal this data in order to make money. To find "insider threats" you will run and compare the output from the "email test" and "download test" described below.
+Step #1 - Email Test: This test involves writing and executing a SQLite query against the "emails" table to identify all individuals who have over the last four months have sent at least 10 emails with a Negative sentiment. The individuals can be identified by the "from_name" column. The "sentiment" column contains the value "Negative" when the email is negative. The date is recorded in the "send_date" column and is stored as a string in "yyyy-mm-dd" format. The query returns the user name and number of Negative emails. The query returns just a list of individual names. After running the query proceed to the next step, "Download Test".
+Step #2 - Download Test: This test involves writing and executing a SQLite query against the "apache_logs" table to identify if any of the individuals identified in step #1 have downloaded more than a total of 300,000,000 bytes over the last four months. In the SQL command reference the "user" column for the individual's name, the "dt" column for the date, and the "byt" column for the byte size. The "dt" field is a string in "yyyy-mm-dd" format. After running the query proceed to the next step, "Conclusion"".
+Step #3 - Conclusion: If Step #2 resulted in any individuals, respond by listing these individuals as possible insider threats and provide the reason why they have been identified. If Step #2 did not result in any individuals, respond by saying there are no known insider threats. This is your final answer to the question.
+
+
+
+A "Denial of Service" (DoS) attack is a type of cyber attack in which an attacker attempts to make a computer, network, or online service unavailable by overwhelming it with a flood of traffic. This can be done by sending a large number of requests to the target system, consuming its resources and bandwidth, and ultimately causing it to crash or become unresponsive to legitimate users. If you wish to find possible Denial of Service attack you can perform the following tasks:
+Network Test: Query network traffic patterns for the last hour and look for a significant increase in incoming traffic over the previous hour from a single source. 
+Service Degradation Test: Query service benchmarks against SLAs and identify particular services degraded below SLA levels.
+System Logs Test: Query system logs for any error messages or warnings that indicate "out of memory" or "could not establish a connection".
+
+
