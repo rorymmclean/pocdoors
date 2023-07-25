@@ -17,14 +17,14 @@ services:
     expose:  
       - 33060
 
-  streamlit:
-    image: streamlit:latest  
-    networks:
-      - pocnetwork
-    environment:
-      - OPENAI_API_KEY=${OPENAI_API_KEY}
-    ports: 
-      - "8501:8501"  
+  # streamlit:
+  #   image: streamlit:latest  
+  #   networks:
+  #     - pocnetwork
+  #   environment:
+  #     - OPENAI_API_KEY=${OPENAI_API_KEY}
+  #   ports: 
+  #     - "8502:8501"  
 
 volumes:
   db_data:

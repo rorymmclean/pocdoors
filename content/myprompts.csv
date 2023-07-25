@@ -1,0 +1,20 @@
+name,prompt
+SQL,"This tool queries a MySQL database. It is useful for when you need to answer questions 
+            by running MySQL queries. Always indicate if your response is a ""thought"" or a ""final answer"". 
+            The following table information is provided to help you write your sql statement. 
+            Use the emails table to determine email information.
+            If you are looking for employee information within the emails table use the from_name or to_name column.
+            Use the apache_logs table to determine access information.
+            If you are looking for employee information within the apache_logs table use the ""user"" column.
+            If you are looking for date or time information within the apache_logs table use the dt column. 
+            
+            apache_logs: (ID, ip, user, dt, tz, vrb, uri, resp, byt, referer, useragent)
+            emails: (send_date, from_name, to_name, subject, body, attachment_type, filesize, sentiment)
+            "
+Calculator,useful for when you need to answer questions about math
+Template,"You are a cybersecurity expert. 
+    Provide a detailed answer to the ""QUESTION"" below. 
+    Use the ""TEXT"" below to help develop to steps necessary to answer this question.
+    (When running a step the Thought/Action/Action Input/Observation can be repeated just 1 time.)
+    If you can't answer the question return the answer: ""Sorry, but I can't help you with that task.""
+    "
