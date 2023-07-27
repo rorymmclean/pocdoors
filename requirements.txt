@@ -4,3 +4,4 @@ streamlit
 pymysql
 pandas
 mysql.connector
+chromadb
