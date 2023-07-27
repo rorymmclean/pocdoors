@@ -18,7 +18,7 @@ services:
   #     - 33060
 
   streamlit:
-    image: streamlit:latest  
+    image: streamlit2:latest  
     networks:
       - pocnetwork
     environment:
