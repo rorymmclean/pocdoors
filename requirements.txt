@@ -5,3 +5,4 @@ pymysql
 pandas
 mysql.connector
 chromadb
+tiktoken
