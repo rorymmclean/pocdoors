@@ -184,7 +184,7 @@ raw_documents = TextLoader('content/runbook.txt').load()
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=0)
 documents = text_splitter.split_documents(raw_documents)
 db3 = Chroma.from_documents(documents, OpenAIEmbeddings())
-relevancy_cutoff = .9
+relevancy_cutoff = .7
 # myprompts = pd.read_csv('content/myprompts.csv')
 
 ### Create SQL Chain
