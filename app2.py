@@ -194,7 +194,7 @@ mypassword = "streamlitpass"
 myconnection = database.connect(
     user=myusername,
     password=mypassword,
-    host="10.1.0.4",
+    host="db",
     database="streamlit")
 
 mycursor = myconnection.cursor()

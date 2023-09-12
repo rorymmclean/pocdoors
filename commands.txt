@@ -6,3 +6,5 @@ docker push rorymcleanaderas/pocmeetup:latest
 docker run -it -d -p 8501:8501 --net pocnetwork -e OPENAI_API_KEY=${OPENAI_API_KEY} pocdoors
 
 
+docker compose up -d
+localhost:8080
